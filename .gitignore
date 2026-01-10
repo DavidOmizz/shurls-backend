@@ -1,0 +1,16 @@
+app/__pycache__/
+backend/__pycache__/
+*.cpython-314.pyc
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django
+db.sqlite3
+
+# Virtual environment
+venv/
+.env
