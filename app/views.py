@@ -37,3 +37,10 @@ class ShortenURLView(APIView):
 def redirect_view(request, code):
     link = get_object_or_404(ShortLink, short_code=code)
     return redirect(link.original_url)
+
+
+from django.http import JsonResponse
+
+def pings(request):
+    # return JsonResponse({"status": "ok"})
+    return JsonResponse({"status": "ok"}, status=200)
